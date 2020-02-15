@@ -62,28 +62,33 @@ pypy3 is recommended.
         - BogoMIPS : 38.40
     - Raspbian buster
     - pypy3.5.3 7.0.0 (apt install pypy3)
+- setup 4
+    - MacBook Pro Late 2013
+        - CPU: Intel Core i5 @ 2.4 GHz
+    - macOS Catalina (10.15.3)
+    - pypy3.6.9 7.3.0 (pyenv install pypy3.6-7.3.0)
 
 (render time, seconds)
 
-| mode | VPS, pypy36 | VPS, python38 | RasPi2B, pypy35 | RasPi3B, pypy35 |
-| --- | ---:| ---:| ---:| ---:|
-| [output-image](img/output-image.png) | 0.266 | 1.865 | 6.297 | 3.212 |
-| [output-image-vec3](img/output-image-vec3.png) | 0.315 | 2.297 | 6.486 | 3.711 |
-| [blue](img/blue.png) | 0.707 | 6.252 | 12.616 | 7.170 |
-| [sphere](img/sphere.png) | 0.841 | 7.907 | 15.537 | 8.326 |
-| [sphere2](img/sphere2.png) | 0.934 | 7.608 | 15.552 | 8.749 |
-| [antialias](img/antialias.png) | 62.843 | 884.650 | 939.587 | 549.351 |
-| [diffuse](img/diffuse.png) | 109.713 | 1567.526 | 1749.937 | 1013.685 |
-| [diffuse-glay](img/diffuse-glay.png) | 110.881 | 1586.712 | 1746.330 | 1000.875 |
-| [sphere-multi](img/sphere-multi.png) | 1.259 | 10.592 | 19.295 | 10.226 |
-| [metal](img/metal.png) | 221.577 | 3445.722 | 3413.407 | 2005.142 |
-| [metal-dielectric](img/metal-dielectric.png) | 218.255 | 3324.230 | 3499.167 | 1981.587 |
-| [metal-dielectric-a](img/metal-dielectric-a.png) | 224.377 | 3408.464 | 3539.292 | 1991.539 |
-| [metal-dielectric2](img/metal-dielectric2.png) | 307.219 | 4783.187 | 4745.875 | 2697.381 |
-| [metal-dielectric2-a](img/metal-dielectric2-a.png) | 319.007 | 4839.520 | 4979.991 | 2772.328 |
-| [metal-fuzz](img/metal-fuzz.png) | 227.517 | 3417.419 | 3461.942 | 1999.956 |
-| [camera-blur](img/camera-blur.png) | 356.629 | 4406.891 | 5232.319 | 2896.651 |
-| [camera-pos](img/camera-pos.png) | 123.810 | 1752.388 | 1921.965 | 1125.020 |
-| [camera-pos2](img/camera-pos2.png) | 137.546 | 2388.454 | 2138.728 | 1235.664 |
-| [camera-pos2-2](img/camera-pos2-2.png) | 149.255 | 2538.759 | 2432.056 | 1323.773 |
-| [where-next](img/where-next.png) | 4694.568 | **164038.643** | - | 45098.358 |
+| mode | VPS, pypy36 | VPS, python38 | RasPi2B, pypy35 | RasPi3B, pypy35 | MBP2013, pypy36 |
+| --- | ---:| ---:| ---:| ---:| ---: |
+| [output-image](img/output-image.png) | 0.266 | 1.865 | 6.297 | 3.212 | 0.280 |
+| [output-image-vec3](img/output-image-vec3.png) | 0.315 | 2.297 | 6.486 | 3.711 | 0.342 |
+| [blue](img/blue.png) | 0.707 | 6.252 | 12.616 | 7.170 | 0.956 |
+| [sphere](img/sphere.png) | 0.841 | 7.907 | 15.537 | 8.326 | 1.129 |
+| [sphere2](img/sphere2.png) | 0.934 | 7.608 | 15.552 | 8.749 | 1.181 |
+| [antialias](img/antialias.png) | 62.843 | 884.650 | 939.587 | 549.351 | 94.840 |
+| [diffuse](img/diffuse.png) | 109.713 | 1567.526 | 1749.937 | 1013.685 | 169.924 |
+| [diffuse-glay](img/diffuse-glay.png) | 110.881 | 1586.712 | 1746.330 | 1000.875 | 169.769 |
+| [sphere-multi](img/sphere-multi.png) | 1.259 | 10.592 | 19.295 | 10.226 | 1.434 |
+| [metal](img/metal.png) | 221.577 | 3445.722 | 3413.407 | 2005.142 | 335.289 |
+| [metal-dielectric](img/metal-dielectric.png) | 218.255 | 3324.230 | 3499.167 | 1981.587 | 329.822 |
+| [metal-dielectric-a](img/metal-dielectric-a.png) | 224.377 | 3408.464 | 3539.292 | 1991.539 | 341.333 |
+| [metal-dielectric2](img/metal-dielectric2.png) | 307.219 | 4783.187 | 4745.875 | 2697.381 | 488.966 |
+| [metal-dielectric2-a](img/metal-dielectric2-a.png) | 319.007 | 4839.520 | 4979.991 | 2772.328 | 498.040 |
+| [metal-fuzz](img/metal-fuzz.png) | 227.517 | 3417.419 | 3461.942 | 1999.956 | 381.543 |
+| [camera-blur](img/camera-blur.png) | 356.629 | 4406.891 | 5232.319 | 2896.651 | 545.660 |
+| [camera-pos](img/camera-pos.png) | 123.810 | 1752.388 | 1921.965 | 1125.020 | 214.053 |
+| [camera-pos2](img/camera-pos2.png) | 137.546 | 2388.454 | 2138.728 | 1235.664 | 229.874 |
+| [camera-pos2-2](img/camera-pos2-2.png) | 149.255 | 2538.759 | 2432.056 | 1323.773 | 244.083 |
+| [where-next](img/where-next.png) | 4694.568 | **164038.643** | - | 45098.358 | 8104.066 |
