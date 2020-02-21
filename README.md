@@ -92,3 +92,8 @@ pypy3 is recommended.
 | [camera-pos2](img/camera-pos2.png) | 137.546 | 2388.454 | 2138.728 | 1235.664 | 229.874 |
 | [camera-pos2-2](img/camera-pos2-2.png) | 149.255 | 2538.759 | 2432.056 | 1323.773 | 244.083 |
 | [where-next](img/where-next.png) | 4694.568 | **164038.643** | - | 45098.358 | 8104.066 |
+
+# With POV-Ray
+
+- pip install -r povray/requirements.txt
+- python povray/where-next.py

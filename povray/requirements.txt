@@ -1,0 +1,2 @@
+https://github.com/Zulko/vapory/archive/master.zip#egg=vapory
+numpy
