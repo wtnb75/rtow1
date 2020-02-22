@@ -58,7 +58,8 @@ def main():
                   'metals.inc', 'glass.inc', 'textures.inc', 'colors.inc'])
     with open("where-next.pov", "w") as ofp:
         print(str(scene), file=ofp)
-    scene.render('where-next.png', width=800, height=600, antialiasing=0.5)
+    scene.render('where-next.png', width=800, height=600,
+                 antialiasing=0.1, quality=10)
 
 
 if __name__ == "__main__":
